@@ -16,13 +16,15 @@ import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { DetalleFechaComponent } from './componentes/detalle-fecha/detalle-fecha.component';
+import { HistoricoResumenComponent } from './componentes/historico-resumen/historico-resumen.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PaginaHomeComponent,
-    DetalleFechaComponent
+    DetalleFechaComponent,
+    HistoricoResumenComponent
   ],
   imports: [
     BrowserModule,
