@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-pagina-home',
-  templateUrl: './pagina-home.component.html',
-  styleUrls: ['./pagina-home.component.scss']
+  selector: 'app-detalle-fecha',
+  templateUrl: './detalle-fecha.component.html',
+  styleUrls: ['./detalle-fecha.component.scss']
 })
-export class PaginaHomeComponent implements OnInit {
+export class DetalleFechaComponent implements OnInit {
 
   checked = false;
   indeterminate = false;
