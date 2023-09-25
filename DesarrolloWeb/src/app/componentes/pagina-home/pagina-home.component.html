@@ -1,18 +1,29 @@
-<h1>Pagina Inicio</h1>
-
-<div class="cuadro_izquierda">
-  <p>Este párrafo está dentro de la división</p>
+<div class="center">
+  <br/>
+  <h1 black>ADMINISTRADOR REPORTE ALARMAS</h1>
 </div>
 
 <br/>
-
-
 <div class="row">
   <div class="jumbotron text-center col-sm-8">
-    <button  mat-raised-button type="button" class="color-button-red" routerLink="/fecha-detalle">Cancelar</button>
+    <div class="cuadro_izquierda">
+      <p>CREA UN REPORTE PERSONALIZADO Y DEFINE LAS OPCIONES DE TIPO DE REPORTE</p>
+    </div>
+  </div>
+  <div class="jumbotron text-center col-sm-4">
+    <div class="cuadro_derecha">
+      <p>BORRA TUS RECORDATORIOS</p>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="row">
+  <div class="jumbotron text-center col-sm-8">
+    <button  mat-raised-button type="button" class="color-button-green" routerLink="/fecha-detalle">Crear Reporte</button>
   </div>
   <div class="jumbotron text-center col-sm-1">
-    <button  mat-raised-button type="button" class="color-button-blue" routerLink="/fecha-detalle">Aceptar</button>
+    <button  mat-raised-button type="button" class="color-button-orange" routerLink="/fecha-detalle">Borrar Historicos Recordatorios</button>
   </div>
 </div>
 
