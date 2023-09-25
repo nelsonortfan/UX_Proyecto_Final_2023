@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">uxj4alarma</string>
+    <!-- pantalla ui ppal -->
+    <string name="inicioUItituloPpal">Aplicativo Alarmas y Recordatorios</string>
+    <string name="inicioUIhoraActual">Hora Actual</string>
+    <string name="tv_UIhora">Hora</string>
+    <string name="tv_UIminutos">Minutos</string>
+    <string name="inicioUIverRecordatorio">Ver Recordatorios</string>
+    <string name="inicioUIaddRecordatorio">Agregar Recordatorio</string>
+    <!-- pantalla agregar recordatorio -->
+    <string name="agregarRecorTitulo">Agregar Recordatorio</string>
+    <string name="agregarRecorFechaElegida">Fecha Elegida: </string>
+    <string name="agregarRecordataFechaElegida">Viernes, Septiembre 29</string>
+    <string name="agregarRecorHoraRecordatorio">Hora del Recordatorio</string>
+    <string name="agregarRecorAsuntoRecordatorio">Asunto Recordatorio</string>
+    <string name="agregarRecorHintAsuntoRecordatorio">Escribe un Asunto</string>
+    <string name="agregarRecorDetalleRecordatorio">Detalle del Recordatorio</string>
+    <string name="agregarRecorHintDetalleRecordatorio">Escribe un detalle de tu recordatorio</string>
+    <string name="agregarRecorRepetir">Repetir : </string>
+    <string name="agregarRecorRDiario">Diario</string>
+    <string name="agregarRecorRSemanal">Semanal</string>
+    <string name="agregarRecorRUnaVez">Una Vez</string>
+    <string name="agregarRecorNotificar">Notificar Antes :</string>
+    <string name="agregarRecorNotificarHora">Horas</string>
+    <string name="agregarRecorNumeroHora">03</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_menuprincipal">Menu Principal</string>
+    <string name="ctn_tv_tituloppal">TituloPpal-agregar</string>
+    <string name="ctn_tv_fondoFigma">FondoFigma-agregar</string>
+    <string name="ctn_tv_fechaElegida">tituloFechaE</string>
+    <!-- Pantalla detalle recordatorio -->
+    <string name="detalleRecorTitulo">Este es tu Recordatorio</string>
+    <string name="detalleRecorfecha">Fecha Elegida:</string>
+    <string name="detalleRecorHora">Hora del Recordatorio:</string>
+    <string name="detalleRecorAsunto">Asunto:</string>
+    <string name="detalleRecorDetalle">Detalle:</string>
+    <string name="detalleRecorRepetir">Se Repetira:</string>
+    <string name="detalleRecorNotificar">Te notificaremos:</string>
+    <!-- pantalla calendario y listar recordatorio -->
+    <string name="CalendarioRecorTitulo">Selecciona la Fecha a Visualizar:</string>
+    <string name="listaRecorTitulo">Recordatorios para Hoy</string>
+    <string name="screenUiTituloppal">screenUIppal</string>
+
+</resources>
