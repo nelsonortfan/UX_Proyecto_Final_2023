@@ -193,6 +193,23 @@
             app:layout_constraintStart_toStartOf="@+id/tv_repetirRecordatorio"
             app:layout_constraintTop_toBottomOf="@+id/tv_repetirRecordatorio">
 
+            <RadioButton android:id="@+id/rd_diario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agregarRecorRDiario" />
+
+            <RadioButton
+                android:id="@+id/rd_semanal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agregarRecorRSemanal" />
+
+            <RadioButton
+                android:id="@+id/rd_unaVez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agregarRecorRUnaVez" />
+
         </RadioGroup>
 
         <TextView
