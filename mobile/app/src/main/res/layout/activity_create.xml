@@ -196,6 +196,8 @@
             <RadioButton android:id="@+id/rd_diario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="true"
+                android:buttonTint="@color/naranja_detalleRecor"
                 android:text="@string/agregarRecorRDiario" />
 
             <RadioButton
