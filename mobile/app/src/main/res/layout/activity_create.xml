@@ -1,292 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:backgroundTint="@color/azul_btn_guardar"
-    tools:context=".CreateActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:id="@+id/fondoFigma1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/ctn_tv_fondoFigma"
-        android:fontFamily="@font/risque"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/figmatextura420" />
+    <data>
 
-    <TextView
-        android:id="@+id/tv_addTituloppal"
-        android:layout_width="278dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="50dp"
-        android:contentDescription="@string/ctn_tv_tituloppal"
-        android:fontFamily="@font/risque"
-        android:text="@string/agregarRecorTitulo"
-        android:textAlignment="center"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fondoFigma1" />
+    </data>
 
-    <TextView
-        android:id="@+id/tv_addfechaElegida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:fontFamily="@font/noto_sans_regular"
-        android:text="@string/agregarRecorFechaElegida"
-        android:textColor="@color/morado_detalleRecor"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_addTituloppal" />
-
-    <TextView
-        android:id="@+id/tv_datafechaElegida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:fontFamily="@font/noto_sans_regular"
-        android:text="@string/agregarRecordataFechaElegida"
-        android:textColor="@color/morado_detalleRecor"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_addfechaElegida" />
-
-    <TextView
-        android:id="@+id/tv_addHoraRecordatorio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/agregarRecorHoraRecordatorio"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_datafechaElegida" />
-
-    <DigitalClock
-        android:id="@+id/digitalClockAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_addHoraRecordatorio" />
-
-    <TextView
-        android:id="@+id/Ui_Horas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/tv_UIhora"
-        android:textSize="11sp"
-        app:layout_constraintStart_toStartOf="@+id/digitalClockAdd"
-        app:layout_constraintTop_toBottomOf="@+id/digitalClockAdd" />
-
-    <TextView
-        android:id="@+id/Ui_Minutos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/tv_UIminutos"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
-        app:layout_constraintStart_toEndOf="@+id/Ui_Horas"
-        app:layout_constraintTop_toBottomOf="@+id/digitalClockAdd" />
-
-    <TextView
-        android:id="@+id/tv_asuntoRecordatorio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/agregarRecorAsuntoRecordatorio"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/digitalClockAdd" />
-
-    <EditText
-        android:id="@+id/et_addAsuntoRecordatorio"
-        android:layout_width="233dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="61dp"
-        android:ems="10"
-        android:hint="@string/agregarRecorHintAsuntoRecordatorio"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/fondoFigma1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/etm_detalleRecordatorio"
-        app:layout_constraintTop_toBottomOf="@+id/tv_asuntoRecordatorio" />
-
-    <TextView
-        android:id="@+id/tv_detalleRecordatorio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/agregarRecorDetalleRecordatorio"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_addAsuntoRecordatorio" />
-
-    <EditText
-        android:id="@+id/etm_detalleRecordatorio"
-        android:layout_width="301dp"
-        android:layout_height="63dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="@string/agregarRecorHintDetalleRecordatorio"
-        android:inputType="textMultiLine"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_detalleRecordatorio" />
-
-    <TextView
-        android:id="@+id/tv_repetirRecordatorio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="228dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/agregarRecorRepetir"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/etm_detalleRecordatorio"
-        app:layout_constraintTop_toBottomOf="@+id/etm_detalleRecordatorio" />
-
-    <RadioGroup
-        android:id="@+id/radio_repetir"
-        android:layout_width="264dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/tv_repetirRecordatorio"
-        app:layout_constraintTop_toBottomOf="@+id/tv_repetirRecordatorio">
-
-        <RadioButton
-            android:id="@+id/rd_diario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/material_dynamic_neutral60"
-            android:checked="true"
-            android:text="@string/agregarRecorRDiario" />
-
-        <RadioButton
-            android:id="@+id/rd_semanal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/material_dynamic_neutral60"
-            android:text="@string/agregarRecorRSemanal" />
-
-        <RadioButton
-            android:id="@+id/rd_unaVez"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/material_dynamic_neutral60"
-            android:text="@string/agregarRecorRUnaVez" />
-
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/tv_notificarRecordatorio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/agregarRecorNotificar"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/radio_repetir"
-        app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="30dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:buttonTint="@color/rojo_checkbox"
-        android:checked="true"
-        app:layout_constraintStart_toEndOf="@+id/tv_notificarRecordatorio"
-        app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
-
-    <EditText
-        android:id="@+id/et_numeroHoras"
-        android:layout_width="29dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="14dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/agregarRecorNumeroHora"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
-
-    <TextView
-        android:id="@+id/Ui_notificarHoras"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/agregarRecorNotificarHora"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/et_numeroHoras"
-        app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
-
-    <Button
-        android:id="@+id/btn_cancelarRecordatorio"
-        android:layout_width="105dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="80dp"
-        android:backgroundTint="@color/rojo_btn_cancelar"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/btn_cancelar"
-        android:textAllCaps="false"
-        android:textSize="14sp"
-        app:cornerRadius="50dp"
-        app:layout_constraintStart_toStartOf="@+id/radio_repetir"
-        app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
-
-    <Button
-        android:id="@+id/btn_guardarRecordatorio"
-        android:layout_width="105dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="80dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:backgroundTint="@color/azul_btn_guardar"
-        android:fontFamily="@font/noto_sans_bold"
-        android:text="@string/btn_guardar"
-        android:textAllCaps="false"
-        android:textSize="14sp"
-        app:cornerRadius="50dp"
-        app:layout_constraintEnd_toEndOf="@+id/etm_detalleRecordatorio"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_cancelarRecordatorio"
-        app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
+        tools:context=".CreateActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/fondoFigma1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ctn_tv_fondoFigma"
+            android:fontFamily="@font/risque"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/figmatextura420" />
+
+        <TextView
+            android:id="@+id/tv_addTituloppal"
+            android:layout_width="278dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/ctn_tv_tituloppal"
+            android:fontFamily="@font/risque"
+            android:text="@string/agregarRecorTitulo"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fondoFigma1" />
+
+        <TextView
+            android:id="@+id/tv_addfechaElegida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:text="@string/agregarRecorFechaElegida"
+            android:textColor="@color/morado_detalleRecor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_addTituloppal" />
+
+        <TextView
+            android:id="@+id/tv_datafechaElegida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:text="@string/agregarRecordataFechaElegida"
+            android:textColor="@color/morado_detalleRecor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_addfechaElegida" />
+
+        <TextView
+            android:id="@+id/tv_addHoraRecordatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/agregarRecorHoraRecordatorio"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_datafechaElegida" />
+
+        <DigitalClock
+            android:id="@+id/digitalClockAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_addHoraRecordatorio" />
+
+        <TextView
+            android:id="@+id/Ui_Horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/tv_UIhora"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/digitalClockAdd"
+            app:layout_constraintTop_toBottomOf="@+id/digitalClockAdd" />
+
+        <TextView
+            android:id="@+id/Ui_Minutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/tv_UIminutos"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toEndOf="@+id/Ui_Horas"
+            app:layout_constraintTop_toBottomOf="@+id/digitalClockAdd" />
+
+        <TextView
+            android:id="@+id/tv_asuntoRecordatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/agregarRecorAsuntoRecordatorio"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/digitalClockAdd" />
+
+        <EditText
+            android:id="@+id/et_addAsuntoRecordatorio"
+            android:layout_width="233dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="61dp"
+            android:ems="10"
+            android:hint="@string/agregarRecorHintAsuntoRecordatorio"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/fondoFigma1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etm_detalleRecordatorio"
+            app:layout_constraintTop_toBottomOf="@+id/tv_asuntoRecordatorio" />
+
+        <TextView
+            android:id="@+id/tv_detalleRecordatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/agregarRecorDetalleRecordatorio"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_addAsuntoRecordatorio" />
+
+        <EditText
+            android:id="@+id/etm_detalleRecordatorio"
+            android:layout_width="301dp"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/agregarRecorHintDetalleRecordatorio"
+            android:inputType="textMultiLine"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detalleRecordatorio" />
+
+        <TextView
+            android:id="@+id/tv_repetirRecordatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="228dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/agregarRecorRepetir"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/etm_detalleRecordatorio"
+            app:layout_constraintTop_toBottomOf="@+id/etm_detalleRecordatorio" />
+
+        <RadioGroup
+            android:id="@+id/radio_repetir"
+            android:layout_width="264dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/tv_repetirRecordatorio"
+            app:layout_constraintTop_toBottomOf="@+id/tv_repetirRecordatorio">
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_notificarRecordatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/agregarRecorNotificar"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_repetir"
+            app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/rojo_checkbox"
+            android:checked="true"
+            app:layout_constraintStart_toEndOf="@+id/tv_notificarRecordatorio"
+            app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
+
+        <EditText
+            android:id="@+id/et_numeroHoras"
+            android:layout_width="29dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/agregarRecorNumeroHora"
+            app:layout_constraintStart_toEndOf="@+id/checkBox"
+            app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
+
+        <TextView
+            android:id="@+id/Ui_notificarHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/agregarRecorNotificarHora"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/et_numeroHoras"
+            app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
+
+        <Button
+            android:id="@+id/btn_cancelarRecordatorio"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/rojo_btn_cancelar"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/btn_cancelar"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:cornerRadius="50dp"
+            app:layout_constraintStart_toStartOf="@+id/radio_repetir"
+            app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
+
+        <Button
+            android:id="@+id/btn_guardarRecordatorio"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/azul_btn_guardar"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="@string/btn_guardar"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:cornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/etm_detalleRecordatorio"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_cancelarRecordatorio"
+            app:layout_constraintTop_toBottomOf="@+id/radio_repetir" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
