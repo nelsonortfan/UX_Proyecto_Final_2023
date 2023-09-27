@@ -13,17 +13,83 @@
   margin: 8px 8px 8px 0;
 }
 
-.mat-raised-button.color-button-green {
-  background-color: green;
-  color: white;
-}
-
 .mat-raised-button.color-button-blue {
   background-color: #85c1e9;
   color: white;
+  width: 180px;
+  margin-left: 530%;
+  border-radius: 30px;
+  margin-top: -300%;
+  margin-bottom: 10%;
 }
 
-.mat-raised-button.color-button-red {
-  background-color: red;
-  color: white;
+.cuadro_derecha{
+  margin-left: -30%;
+  margin-right: 40%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  height: 80%;
+  width: 70%;
+  padding: 40px;
+}
+
+.cuadro_izquierda{
+  margin-left: 10%;
+  margin-right: 60%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  height: 80%;
+  width: 60%;
+  padding: 40px;
+  border: #000000 2px solid;
+  text-align: center;
+}
+
+
+h1{
+  font-family: 'Risque', cursive;
+  font-size: 250%;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+h2{
+  color:#6651a0;
+  text-decoration: underline;
+}
+
+h3{
+  color: orange;
+  white-space: pre;
+}
+
+h4{
+  color: black;
+  white-space: pre;
+  margin-left: 10%;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+.icono{
+  margin-left: -100%;
+  margin: 0 10px;
 }

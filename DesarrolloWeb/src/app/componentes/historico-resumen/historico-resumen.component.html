@@ -1,12 +1,49 @@
-<h1>Resumen Histórico Recordatorios Registrados</h1>
-
-<div>
-  <img src="./assets/images/imagen_barras.jpg" alt="Flowers in Chania">
+<br/>
+<div class="jumbotron text-center">
+  <h1>Resumen Histórico Recordatorios Registrados</h1>
 </div>
 
+
 <div class="row">
+
+  <div class="card-body col-sm-4">
+    <div class="cuadro_izquierda">
+      <h2>Controles Dashboard</h2>
+      <label><h3>Ver Total De recordatorios</h3></label>
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"  >
+        <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+          {{season}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <label><h3>Incluir Recordatorios Con Periodicidad</h3></label>
+
+
+        <section class="example-section">
+          <mat-checkbox class="example-margin" [(ngModel)]="checked">Diaria</mat-checkbox>
+          <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Semanal</mat-checkbox>
+          <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Mensual</mat-checkbox>
+        </section>
+
+        <div>
+          <mat-icon svgIcon="thumbs-up" aria-hidden="false" class="icono"></mat-icon>
+          <h4>Reporte Creado Por Google Analytics</h4>
+        </div>
+    </div>
+
+  </div>
+
+
+  <div class="card-body col-sm-4">
+    <div class="cuadro_derecha">
+      <div>
+        <img src="./assets/images/imagen_barras.jpg" alt="Flowers in Chania">
+      </div>
+    </div>
+  </div>
+
+</div>
+
   <div class="jumbotron text-center col-sm-1">
     <button  mat-raised-button type="button" class="color-button-blue" routerLink="/home">Pantalla Principal</button>
   </div>
-</div>
 
