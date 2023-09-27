@@ -1,4 +1,4 @@
-
+<br/>
 
   <div class="jumbotron text-center">
     <h1>Detalles de la fecha</h1>
@@ -6,20 +6,29 @@
 
 
 
-  <div class="card bg-light" width="20 px">
+
      <div class="row">
       <div class="card-body col-sm-4">
-        <div class="container col-sm-8">
-          <label>Ingresa mes/dia/año:</label>
-          <div  id="wrapper">
-            <mat-form-field>
-              <mat-label>Escoja una fecha</mat-label>
-              <input matInput [matDatepicker]="picker">
-              <mat-hint>MM/DD/YYYY</mat-hint>
-              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-datepicker #picker></mat-datepicker>
-            </mat-form-field>
+
+        <div class="cuadro_izquierda">
+
+          <div class="container col-sm-8">
+
+
+              <h2>Ingresa mes/dia/año</h2>
+
+
+            <div  id="wrapper">
+              <mat-form-field>
+                <mat-label>Enter Date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
           </div>
+
         </div>
       </div>
       <div class="card-body col-sm-4"></div>
@@ -37,7 +46,7 @@
           </div>
         </div>
       </div>
-    </div>
+
   <br/>
   <br/>
 
