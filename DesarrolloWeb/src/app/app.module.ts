@@ -18,6 +18,9 @@ import { MatCardModule } from '@angular/material/card';
 import { DetalleFechaComponent } from './componentes/detalle-fecha/detalle-fecha.component';
 import { HistoricoResumenComponent } from './componentes/historico-resumen/historico-resumen.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MensajeBorrarComponent } from './componentes/mensaje-borrar/mensaje-borrar.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 @NgModule({
@@ -25,7 +28,8 @@ import { MatIconModule } from '@angular/material/icon';
     AppComponent,
     PaginaHomeComponent,
     DetalleFechaComponent,
-    HistoricoResumenComponent
+    HistoricoResumenComponent,
+    MensajeBorrarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     MatCheckboxModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
