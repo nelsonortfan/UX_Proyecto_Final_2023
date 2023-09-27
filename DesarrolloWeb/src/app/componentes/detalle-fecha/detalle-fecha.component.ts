@@ -11,6 +11,8 @@ export class DetalleFechaComponent implements OnInit {
   indeterminate = false;
   labelPosition: 'before' | 'after' = 'after';
   disabled = false;
+  value1 = '0-60';
+  value2 = '0-60';
 
   constructor() { }
 

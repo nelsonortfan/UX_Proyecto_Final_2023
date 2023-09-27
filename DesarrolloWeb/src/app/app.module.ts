@@ -17,6 +17,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { DetalleFechaComponent } from './componentes/detalle-fecha/detalle-fecha.component';
 import { HistoricoResumenComponent } from './componentes/historico-resumen/historico-resumen.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { HistoricoResumenComponent } from './componentes/historico-resumen/histo
     MatRadioModule,
     FormsModule,
     MatCheckboxModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
