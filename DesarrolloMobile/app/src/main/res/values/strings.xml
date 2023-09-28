@@ -34,13 +34,17 @@
     <string name="detalleRecorTitulo">Este es tu Recordatorio</string>
     <string name="detalleRecorfecha">Fecha Elegida:</string>
     <string name="detalleRecorHora">Hora del Recordatorio:</string>
+    <string name="detalleRecorDataHora">08:00 AM</string>
     <string name="detalleRecorAsunto">Asunto:</string>
-    <string name="detalleRecorDetalle">Detalle:</string>
+    <string name="detalleRecorAsuntoData">Mi primer Recordatorio</string>
+    <string name="detalleRecorDetalle">Detalle Recordatorio:</string>
+    <string name="detalleRecorDetalleData">Presentar Entrevista Embajada</string>
     <string name="detalleRecorRepetir">Se Repetira:</string>
+    <string name="detalleRecorRepetirData">Una Vez</string>
     <string name="detalleRecorNotificar">Te notificaremos:</string>
+    <string name="detalleRecorNotificarData">3 horas Antes</string>
+    <string name="btn_detalleRecorMenu">Menu Principal</string>
     <!-- pantalla calendario y listar recordatorio -->
-    <string name="CalendarioRecorTitulo">Selecciona la Fecha a Visualizar:</string>
-    <string name="listaRecorTitulo">Recordatorios para Hoy</string>
-    <string name="screenUiTituloppal">screenUIppal</string>
+
 
 </resources>

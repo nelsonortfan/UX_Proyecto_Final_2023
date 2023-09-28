@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleActivity">
+
+    <ImageView
+        android:id="@+id/fondoFigma4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ctn_tv_fondoFigma"
+        android:fontFamily="@font/risque"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/figmatextura420" />
+
+    <TextView
+        android:id="@+id/tv_detalleTituloppal"
+        android:layout_width="288dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/CalendarioRecorCnt"
+        android:fontFamily="@font/risque"
+        android:text="@string/detalleRecorTitulo"
+        android:textColor="@color/naranja_detalleRecor"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fondoFigma4" />
+
+    <TextView
+        android:id="@+id/tv_detailfechaElegida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/agregarRecorFechaElegida"
+        android:textColor="@color/morado_detalleRecor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detalleTituloppal" />
+
+    <TextView
+        android:id="@+id/tv_detailDatafechaElegida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/agregarRecordataFechaElegida"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailfechaElegida" />
+
+    <TextView
+        android:id="@+id/tv_detailHoraRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/agregarRecorHoraRecordatorio"
+        android:textColor="@color/morado_detalleRecor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDatafechaElegida" />
+
+    <TextView
+        android:id="@+id/tv_detailDataTimeElegida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/detalleRecorDataHora"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailHoraRecordatorio" />
+
+    <TextView
+        android:id="@+id/tv_detailAsuntoRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/detalleRecorAsunto"
+        android:textColor="@color/morado_detalleRecor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDataTimeElegida" />
+
+    <TextView
+        android:id="@+id/tv_detailDataAsuntoElegida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/noto_sans_regular"
+        android:text="@string/detalleRecorAsuntoData"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailAsuntoRecordatorio" />
+
+    <TextView
+        android:id="@+id/tv_detailDetalleRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/detalleRecorDetalle"
+        android:textColor="@color/morado_detalleRecor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDataAsuntoElegida" />
+
+    <TextView
+        android:id="@+id/tv_detailDataDetalleElegida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/noto_sans_regular"
+        android:text="@string/detalleRecorDetalleData"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDetalleRecordatorio" />
+
+    <TextView
+        android:id="@+id/tv_detailRepetirRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/detalleRecorRepetir"
+        android:textColor="@color/morado_detalleRecor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDataDetalleElegida" />
+
+    <TextView
+        android:id="@+id/tv_detailDataRepetirElegida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/noto_sans_regular"
+        android:text="@string/detalleRecorRepetirData"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailRepetirRecordatorio" />
+
+    <TextView
+        android:id="@+id/tv_detailNotificarRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/detalleRecorNotificar"
+        android:textColor="@color/morado_detalleRecor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDataRepetirElegida" />
+
+    <TextView
+        android:id="@+id/tv_detailDataNotificarElegida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/noto_sans_regular"
+        android:text="@string/detalleRecorNotificarData"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailNotificarRecordatorio" />
+
+    <Button
+        android:id="@+id/btn_cancelarDetailRecordatorio"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="49dp"
+        android:backgroundTint="@color/verde_indicador"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/btn_editar"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDataNotificarElegida" />
+
+    <Button
+        android:id="@+id/btn_guardarDetailRecordatorio"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="49dp"
+        android:backgroundTint="@color/azul_btn_guardar"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/btn_menuprincipal"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancelarDetailRecordatorio"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailDataNotificarElegida" />
+</androidx.constraintlayout.widget.ConstraintLayout>
