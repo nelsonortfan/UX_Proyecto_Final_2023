@@ -1,0 +1,84 @@
+.center {
+  text-align: center;
+  background-color: #bcd4ff;
+  padding: 20px;
+  opacity: 0.6;
+}
+
+h1{
+  font-family: 'Risque', cursive;
+}
+
+.cuadro_derecha{
+  margin-left: -30%;
+  margin-right: 40%;
+  margin-top: -4%;
+  margin-bottom: -60%;
+  height: 70%;
+  width: 70%;
+  padding: 40px;
+}
+
+.cuadro_izquierda{
+  margin-left: 10%;
+  margin-right: 60%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  height: 80%;
+  width: 60%;
+  padding: 40px;
+  text-align: center;
+}
+
+.fieldText{
+  border: #000000 2px solid;
+  width: 60%;
+}
+
+.onlyRead{
+  border: #000000 1px solid;
+}
+
+.mat-button.color-button-pink {
+  background-color:  #eb5c44 ;
+  color: white;
+  margin-left: -20%;
+  width: 40%;
+  border-radius: 30px;
+  margin-inline: 25px;
+}
+
+.example-button-row{
+  margin-inline: 2px;
+}
+
+.selectores{
+  margin-inline: 100px;
+  margin-left: 10%;
+}
+
+.Texto2{
+  margin-left: 10%;
+}
+
+.selector{
+  margin-top: -5%;
+}
+
+.mat-raised-button.color-button-blue {
+  background-color: #85c1e9;
+  color: white;
+  width: 180px;
+  margin-left: -200%;
+  border-radius: 30px;
+  margin-top: 120%;
+}
+
+.mat-raised-button.color-button-green {
+  background-color: #26ba35;
+  color: white;
+  width: 180px;
+  margin-left: 20%;
+  border-radius: 30px;
+  margin-top: 12%;
+}
