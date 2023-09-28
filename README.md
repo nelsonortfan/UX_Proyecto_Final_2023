@@ -1,5 +1,27 @@
 # UX_Proyecto_Final_2023
 
+# Pantallas realizadas
+
+1. Mario Gomez realizó las siguientes pantallas:
+
+<li>Pantalla Home Angular</li>
+<li>Pantalla Parámetros Angular</li>
+<li>Pantalla Principal Mobile</li>
+<li>Pantalla Formulario Mobile</li>
+<li>Pantalla Confirmación Mobile</li>
+
+<br/>
+
+2. Nelson Ortiz realizó las siguientes pantallas:
+
+<li>Pantalla Detalles Fechas</li>
+<li>Pantalla Resumen Histórico</li>
+<li>Pantalla Principal Mobile</li>
+<li>Pantalla Calendario</li>
+<li>Pantalla Lista Recordatorios</li>
+
+<br/>
+
 # Desarrollo WEB en Angular
 
 1. Para poder ejecutar la aplicación, es necesario tener instalado en el equipo que se vaya a ejecutar la version de Node 16.15.1. Una vez descargado el codigo, ubicarse en el folder "Desarrollo Web" y ejecutar el comando:
@@ -67,3 +89,4 @@
 ![Alt text](imagenes/celular6.png)
 
 8. De esta manera se documenta tanto el uso de la aplicacion Mobile como Web.
+
