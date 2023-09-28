@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ListActivity">
+
+    <ImageView
+        android:id="@+id/fondoFigma4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ctn_tv_fondoFigma"
+        android:fontFamily="@font/risque"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/figmatextura420" />
+
+    <TextView
+        android:id="@+id/tv_calendarTituloppal"
+        android:layout_width="288dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/cnt_ListarRecordatorio"
+        android:fontFamily="@font/risque"
+        android:text="@string/tv_listTituloPpal"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fondoFigma4" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/listRecordatorio"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/tv_calendarTituloppal"
+        app:layout_constraintStart_toStartOf="@+id/tv_calendarTituloppal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calendarTituloppal" />
+
+    <Button
+        android:id="@+id/btn_MenuListRecordatorio"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="@color/azul_btn_guardar"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="@string/btn_listRecorMenuppal"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

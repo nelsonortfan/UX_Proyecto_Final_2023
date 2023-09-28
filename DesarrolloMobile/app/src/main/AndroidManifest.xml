@@ -11,11 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Uxj4alarma"
         tools:targetApi="31">
-        
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
         <activity
             android:name=".DetalleActivity"
             android:exported="false" />
-        
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
         <activity
             android:name=".CreateActivity"
             android:exported="false" />

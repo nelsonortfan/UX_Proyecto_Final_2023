@@ -45,6 +45,17 @@
     <string name="detalleRecorNotificarData">3 horas Antes</string>
     <string name="btn_detalleRecorMenu">Menu Principal</string>
     <!-- pantalla calendario y listar recordatorio -->
+    <string name="CalendarioRecorCnt">Pantalla_Calendario</string>
+    <string name="cnt_ListarRecordatorio">Pantalla_Listar_recor</string>
+    <string name="DetalleRecorCnt">Pantalla_Calendario</string>
+    <string name="CalendarioRecorTitulo">Selecciona la Fecha a Visualizar:</string>
+    <string name="listaRecorTitulo">Recordatorios para Hoy</string>
+    <string name="screenUiTituloppal">screenUIppal</string>
+    <string name="btn_listRecorMenuppal">Menu Principal</string>
+    <string name="tv_listTituloPpal">Recordatorios para hoy</string>
+    <string-array name="listRecordatorio">
+        <item>Ver Recordatorios</item>
+    </string-array>
 
 
 </resources>
