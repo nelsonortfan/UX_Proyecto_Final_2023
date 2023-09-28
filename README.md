@@ -35,3 +35,35 @@
 8. Si damos click en “Menu Principal” nos enviara a la pantalla inicial. Si damos click en “Generar Reporte” iremos a la gráfica con el Dashboard, donde se ve el logo de Google Analytics y un Dashboard con botones de control:
 
 ![Alt text](imagenes/reporte.jpg)
+
+# Desarrollo Mobile con Kotlin
+
+1. Para el desarrollo Mobile puede usar el APK que se encuentra en el folder "APK" o puede cargar el proyecto en la ultima versión de Android Studio y ejecutarlo con el simulador. En ambos casos, la primera pantalla que visualizara sera la principal:
+
+![Alt text](imagenes/celular1.png)
+
+2. Si da click en "Ver Recordatorios", aparecera el calendario:
+
+![Alt text](imagenes/celular2.png)
+
+3. Si le da click al botón "Cancelar" regresara a la pantalla principal. Si selecciona una fecha, lo envia a la pantalla del listado de recordatorios:
+
+![Alt text](imagenes/celular3.png)
+
+4. Damos click en el botón "Menu Principal" y nos trae devuelta a la pantalla inicial. Damos ahora click en el botón "Agregar Recordatorio": 
+
+![Alt text](imagenes/celular1.png)
+
+5. Esto nos abre el formulario para registrar un recordatorio. Si le damos click en "Cancelar" nos devuelve a la pantalla inicial:
+
+![Alt text](imagenes/celular4.png)
+
+6. Si le damos click en "Guardar" nos envia a la pantalla de confirmación que se ha registrado correctamente:
+
+![Alt text](imagenes/celular5.png)
+
+7. Si le damos click en el botón "Menu Principal" nos envia a la pantalla principal. En caso de que demos click en el botón "Editar" podremos editar la información ingresada nuevamente:
+
+![Alt text](imagenes/celular6.png)
+
+8. De esta manera se documenta tanto el uso de la aplicacion Mobile como Web.
