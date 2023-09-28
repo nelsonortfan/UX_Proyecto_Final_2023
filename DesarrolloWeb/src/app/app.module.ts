@@ -20,6 +20,7 @@ import { HistoricoResumenComponent } from './componentes/historico-resumen/histo
 import { MatIconModule } from '@angular/material/icon';
 import { MensajeBorrarComponent } from './componentes/mensaje-borrar/mensaje-borrar.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ParametrosReporteComponent } from './componentes/parametros-reporte/parametros-reporte.component';
 
 
 
@@ -29,7 +30,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     PaginaHomeComponent,
     DetalleFechaComponent,
     HistoricoResumenComponent,
-    MensajeBorrarComponent
+    MensajeBorrarComponent,
+    ParametrosReporteComponent
   ],
   imports: [
     BrowserModule,
